@@ -406,6 +406,31 @@ by exp-lbrs.ulp</description>
 <smd name="P$GND2" x="-1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$GND3" x="3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 </package>
+<package name="RETROESP32_SOIC8">
+<circle x="-1.5875" y="-0.635" radius="0.45" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RETROESP32_CONDUCTIVE_BUTTON">
@@ -437,6 +462,22 @@ by exp-lbrs.ulp</description>
 <pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
 <pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
 <text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="RETROESP32_LM4875">
+<wire x1="-5.08" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="BYP" x="-10.16" y="-5.08" length="middle"/>
+<pin name="DC_VOL" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="GND" x="7.62" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="HPHONE" x="25.4" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="VDD" x="7.62" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="VIN" x="-10.16" y="5.08" length="middle" direction="in"/>
+<pin name="VOUT1" x="25.4" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="VOUT2" x="25.4" y="0" length="middle" direction="out" rot="R180"/>
+<text x="-5.08" y="10.922" size="1.27" layer="95">&gt;Name</text>
+<text x="-5.08" y="-12.7" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -481,6 +522,28 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RETROESP32_LM4875" prefix="U">
+<gates>
+<gate name="U$1" symbol="RETROESP32_LM4875" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="RETROESP32_SOIC8">
+<connects>
+<connect gate="U$1" pin="BYP" pad="7"/>
+<connect gate="U$1" pin="DC_VOL" pad="4"/>
+<connect gate="U$1" pin="GND" pad="6"/>
+<connect gate="U$1" pin="HPHONE" pad="3"/>
+<connect gate="U$1" pin="VDD" pad="1"/>
+<connect gate="U$1" pin="VIN" pad="2"/>
+<connect gate="U$1" pin="VOUT1" pad="5"/>
+<connect gate="U$1" pin="VOUT2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -503,6 +566,7 @@ by exp-lbrs.ulp</description>
 <part name="A" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_THICK"/>
 <part name="SELECT" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
 <part name="START" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
+<part name="U1" library="GabozeLite" deviceset="RETROESP32_LM4875" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -554,6 +618,10 @@ by exp-lbrs.ulp</description>
 </instance>
 <instance part="START" gate="G$1" x="76.2" y="147.32" smashed="yes">
 <attribute name="NAME" x="76.2" y="151.13" size="1.9304" layer="95" font="vector" ratio="20" align="center"/>
+</instance>
+<instance part="U1" gate="U$1" x="182.88" y="162.56" smashed="yes">
+<attribute name="NAME" x="177.8" y="173.482" size="1.27" layer="95"/>
+<attribute name="VALUE" x="177.8" y="149.86" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>

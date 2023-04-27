@@ -237,83 +237,6 @@ by exp-lbrs.ulp</description>
 <vertex x="1.65" y="-3.1" curve="-30"/>
 </polygon>
 </package>
-<package name="RETROESP32_MGB-001">
-<circle x="29.06" y="33.58" radius="1.65" width="0.6096" layer="26"/>
-<circle x="2.01" y="23.48" radius="1.65" width="0.6096" layer="26"/>
-<circle x="67.06" y="29.13" radius="1.65" width="0.6096" layer="26"/>
-<wire x1="69.5" y1="112" x2="69.5" y2="96.5" width="0" layer="20"/>
-<wire x1="69.5" y1="96.5" x2="69.75" y2="96.5" width="0" layer="20"/>
-<wire x1="69.75" y1="96.5" x2="70.25" y2="96" width="0" layer="20" curve="-90"/>
-<wire x1="70.25" y1="96" x2="70.25" y2="82" width="0" layer="20"/>
-<wire x1="70.25" y1="82" x2="69.75" y2="81.5" width="0" layer="20" curve="-90"/>
-<wire x1="69.75" y1="81.5" x2="69.5" y2="81.5" width="0" layer="20"/>
-<wire x1="69.5" y1="81.5" x2="69.5" y2="17.95" width="0" layer="20"/>
-<wire x1="69.5" y1="17.95" x2="68.5" y2="16.95" width="0" layer="20" curve="-90"/>
-<wire x1="68.5" y1="16.95" x2="51.5" y2="16.95" width="0" layer="20"/>
-<wire x1="51.5" y1="16.95" x2="50.5" y2="15.95" width="0" layer="20" curve="90"/>
-<wire x1="50.5" y1="15.95" x2="50.5" y2="1" width="0" layer="20"/>
-<wire x1="69.5" y1="112" x2="68.5" y2="113" width="0" layer="20" curve="90"/>
-<wire x1="68.5" y1="113" x2="17" y2="113" width="0" layer="20"/>
-<wire x1="50.5" y1="1" x2="49.5" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="42.5" y1="1.75" x2="42.5" y2="0.5" width="0" layer="20"/>
-<wire x1="42.5" y1="0.5" x2="43" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="43" y1="0" x2="49.5" y2="0" width="0" layer="20"/>
-<wire x1="1" y1="0" x2="35" y2="0" width="0" layer="20"/>
-<wire x1="35" y1="0" x2="35.5" y2="0.5" width="0" layer="20" curve="90"/>
-<wire x1="35.5" y1="0.5" x2="35.5" y2="1.75" width="0" layer="20"/>
-<wire x1="1" y1="0" x2="0" y2="1" width="0" layer="20" curve="-90"/>
-<wire x1="0" y1="1" x2="0" y2="45.9" width="0" layer="20"/>
-<wire x1="17" y1="113" x2="17" y2="114" width="0" layer="20"/>
-<wire x1="17" y1="114" x2="16.5" y2="114" width="0" layer="20"/>
-<wire x1="16.5" y1="114" x2="16.5" y2="114.5" width="0" layer="20"/>
-<wire x1="16.5" y1="114.5" x2="14" y2="114.5" width="0" layer="20"/>
-<wire x1="14" y1="114.5" x2="14" y2="114" width="0" layer="20"/>
-<wire x1="14" y1="114" x2="8" y2="114" width="0" layer="20"/>
-<wire x1="8" y1="114" x2="8" y2="114.5" width="0" layer="20"/>
-<wire x1="8" y1="114.5" x2="5.5" y2="114.5" width="0" layer="20"/>
-<wire x1="5.5" y1="114.5" x2="5.5" y2="114" width="0" layer="20"/>
-<wire x1="5.5" y1="114" x2="5" y2="114" width="0" layer="20"/>
-<wire x1="5" y1="114" x2="5" y2="113" width="0" layer="20"/>
-<wire x1="5" y1="113" x2="1" y2="113" width="0" layer="20"/>
-<wire x1="1" y1="113" x2="0" y2="112" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="112" x2="0" y2="94" width="0" layer="20"/>
-<wire x1="0" y1="67.5" x2="0" y2="48.2" width="0" layer="20"/>
-<wire x1="0" y1="48.2" x2="0" y2="45.9" width="0" layer="20" curve="-180"/>
-<wire x1="-1.75" y1="93.5" x2="-1.75" y2="68" width="0" layer="20"/>
-<wire x1="-1.75" y1="68" x2="-1.25" y2="67.5" width="0" layer="20" curve="90"/>
-<wire x1="-1.25" y1="67.5" x2="0" y2="67.5" width="0" layer="20"/>
-<wire x1="-1.75" y1="93.5" x2="-1.25" y2="94" width="0" layer="20" curve="-90"/>
-<wire x1="-1.25" y1="94" x2="0" y2="94" width="0" layer="20"/>
-<wire x1="35.5" y1="1.75" x2="42.5" y2="1.75" width="0" layer="20"/>
-<text x="67.06" y="36.48" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
-<text x="67.06" y="32.48" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
-<text x="29.06" y="40.98" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
-<text x="29.06" y="36.98" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
-<text x="2.06" y="30.98" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
-<text x="2.06" y="26.98" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
-<hole x="67.6" y="107.8" drill="2.6"/>
-<hole x="2.15" y="106.8" drill="2.6"/>
-<hole x="1.9" y="63.8" drill="2.6"/>
-<hole x="67.6" y="63.8" drill="2.6"/>
-<hole x="67.1" y="29.15" drill="2.6"/>
-<hole x="56.6" y="31.1" drill="3.8"/>
-<hole x="53.6" y="41.1" drill="2.2"/>
-<hole x="29.1" y="33.6" drill="2.6"/>
-<hole x="23.7" y="27.2" drill="2.2"/>
-<hole x="22.7" y="22.4" drill="2.6"/>
-<hole x="2.05" y="23.5" drill="2.6"/>
-<hole x="46.6" y="22.4" drill="3.5"/>
-<dimension x1="-0.001" y1="121.03" x2="69.499" y2="121.03" x3="34.749" y3="119.03" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="72.999" y1="16.98" x2="72.999" y2="113.03" x3="74.999" y3="65.005" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="-8.001" y1="0.03" x2="-8.001" y2="114.53" x3="-6.001" y3="57.28" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="72.999" y1="0.03" x2="72.999" y2="16.98" x3="74.999" y3="8.505" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="50.499" y1="-5.97" x2="0.049" y2="-5.97" x3="25.274" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="69.499" y1="-5.97" x2="50.499" y2="-5.97" x3="59.999" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="70.249" y1="-5.97" x2="69.499" y2="-5.97" x3="69.874" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="-0.001" y1="-5.97" x2="-1.751" y2="-5.97" x3="-0.876" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="70.249" y1="-11.97" x2="-1.751" y2="-11.97" x3="34.249" y3="-9.97" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="72.999" y1="113.03" x2="72.999" y2="114.53" x3="74.999" y3="113.78" textsize="1.778" layer="47" dtype="horizontal"/>
-</package>
 <package name="RETROESP32_CONDUCTIVE_BUTTON_THICK">
 <circle x="0" y="0" radius="4" width="0" layer="39"/>
 <smd name="P$ACTIVE" x="0" y="-2.25" dx="3.5" dy="0.5" layer="1" rot="R270"/>
@@ -448,6 +371,112 @@ by exp-lbrs.ulp</description>
 <smd name="P$GND1" x="-3" y="1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
 <smd name="P$GND2" x="-1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$GND3" x="3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
+</package>
+<package name="RETROESP32_SOIC8">
+<circle x="-1.5875" y="-0.635" radius="0.45" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="picoboy">
+<packages>
+<package name="PICOBOY_GBC_BOARD_OUTLINE">
+<circle x="29.06" y="34.58" radius="1.65" width="0.6096" layer="26"/>
+<circle x="2.01" y="22.48" radius="1.65" width="0.6096" layer="26"/>
+<circle x="67.06" y="28.13" radius="1.65" width="0.6096" layer="26"/>
+<wire x1="69.5" y1="95.5" x2="69.5" y2="116" width="0" layer="20"/>
+<wire x1="69.5" y1="116" x2="68.5" y2="117" width="0" layer="20" curve="90"/>
+<wire x1="68.5" y1="117" x2="6" y2="117" width="0" layer="20"/>
+<wire x1="69.5" y1="95.5" x2="69.75" y2="95.5" width="0" layer="20"/>
+<wire x1="69.75" y1="95.5" x2="70.25" y2="95" width="0" layer="20" curve="-90"/>
+<wire x1="70.25" y1="95" x2="70.25" y2="81" width="0" layer="20"/>
+<wire x1="70.25" y1="81" x2="69.75" y2="80.5" width="0" layer="20" curve="-90"/>
+<wire x1="69.75" y1="80.5" x2="69.5" y2="80" width="0" layer="20"/>
+<wire x1="69.5" y1="80" x2="69.5" y2="14" width="0" layer="20"/>
+<wire x1="69.5" y1="14" x2="68.5" y2="13" width="0" layer="20" curve="-90"/>
+<wire x1="68.5" y1="13" x2="52" y2="13" width="0" layer="20"/>
+<wire x1="52" y1="13" x2="51" y2="12" width="0" layer="20" curve="90"/>
+<wire x1="51" y1="12" x2="51" y2="-4" width="0" layer="20"/>
+<wire x1="6" y1="117" x2="5" y2="116" width="0" layer="20" curve="90"/>
+<wire x1="5" y1="116" x2="5" y2="112" width="0" layer="20"/>
+<wire x1="5" y1="112" x2="1" y2="112" width="0" layer="20"/>
+<wire x1="1" y1="112" x2="0" y2="111" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="111" x2="0" y2="98" width="0" layer="20"/>
+<wire x1="0" y1="66.5" x2="0" y2="47.2" width="0" layer="20"/>
+<wire x1="0" y1="47.2" x2="0" y2="44.9" width="0" layer="20" curve="-180"/>
+<wire x1="-1.75" y1="97.5" x2="-1.75" y2="67" width="0" layer="20"/>
+<wire x1="-1.75" y1="67" x2="-1.25" y2="66.5" width="0" layer="20" curve="90"/>
+<wire x1="-1.25" y1="66.5" x2="0" y2="66.5" width="0" layer="20"/>
+<wire x1="-1.75" y1="97.5" x2="-1.25" y2="98" width="0" layer="20" curve="-90"/>
+<wire x1="-1.25" y1="98" x2="0" y2="98" width="0" layer="20"/>
+<text x="67.06" y="35.48" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
+<text x="67.06" y="31.48" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
+<text x="29.06" y="41.98" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
+<text x="29.06" y="37.98" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
+<text x="2.06" y="29.98" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="center">SCREW</text>
+<text x="2.06" y="25.98" size="1.4224" layer="26" font="vector" ratio="12" rot="SMR180" align="center">⇪</text>
+<hole x="67.6" y="109.8" drill="2.6"/>
+<hole x="2.15" y="108.8" drill="2.6"/>
+<hole x="1.9" y="65.8" drill="2.6"/>
+<hole x="67.6" y="65.8" drill="2.6"/>
+<hole x="67.1" y="28.15" drill="2.6"/>
+<hole x="56.6" y="30.1" drill="3.8"/>
+<hole x="50.6" y="41.6" drill="2.2"/>
+<hole x="29.1" y="34.6" drill="2.6"/>
+<hole x="23.7" y="26.6" drill="2.2"/>
+<hole x="21.7" y="20.6" drill="2.6"/>
+<hole x="2.05" y="22.5" drill="2.6"/>
+<hole x="48.1" y="20.1" drill="3.5"/>
+<dimension x1="-0.001" y1="121.03" x2="69.499" y2="121.03" x3="34.749" y3="119.03" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="72.999" y1="16.98" x2="72.999" y2="113.03" x3="74.999" y3="65.005" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="-8.001" y1="0.03" x2="-8.001" y2="114.53" x3="-6.001" y3="57.28" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="72.999" y1="0.03" x2="72.999" y2="16.98" x3="74.999" y3="8.505" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="50.499" y1="-5.97" x2="0.049" y2="-5.97" x3="25.274" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="69.499" y1="-5.97" x2="50.499" y2="-5.97" x3="59.999" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="70.249" y1="-5.97" x2="69.499" y2="-5.97" x3="69.874" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="-0.001" y1="-5.97" x2="-1.751" y2="-5.97" x3="-0.876" y3="-3.97" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="70.249" y1="-11.97" x2="-1.751" y2="-11.97" x3="34.249" y3="-9.97" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="72.999" y1="113.03" x2="72.999" y2="114.53" x3="74.999" y3="113.78" textsize="1.778" layer="47" dtype="horizontal"/>
+<text x="26.67" y="2.81" size="3.81" layer="26" rot="MR0">PICOBOY</text>
+<wire x1="0" y1="0" x2="0" y2="44.9" width="0" layer="20"/>
+<wire x1="51" y1="-4" x2="0" y2="0" width="0" layer="20" curve="-20"/>
+<dimension x1="56.6" y1="30.1" x2="48.1" y2="20.1" x3="52.35" y3="17" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="56.6" y1="30.1" x2="48.1" y2="20.1" x3="11.9" y3="25.1" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="56.6" y1="30.1" x2="50.6" y2="41.6" x3="53.6" y3="44.9" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="56.6" y1="30.1" x2="50.6" y2="41.6" x3="48.5" y3="35.85" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="29.1" y1="34.6" x2="56.6" y2="33" x3="42.85" y3="50.65" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="29.1" y1="34.6" x2="33.7" y2="30.1" x3="35" y3="32.35" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="21.7" y1="20.6" x2="48.1" y2="15.5" x3="34.9" y3="13.8" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="21.7" y1="20.6" x2="18.5" y2="30.1" x3="17.4" y3="25.35" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="23.7" y1="26.6" x2="23.7" y2="30.1" x3="25.7" y3="28.35" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="23.7" y1="26.6" x2="21.7" y2="20.6" x3="22.7" y3="21.3" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="2.05" y1="22.5" x2="21.7" y2="14.9" x3="11.875" y3="14.9" textsize="1.27" layer="20" dtype="horizontal"/>
+<dimension x1="2.05" y1="22.5" x2="9.9" y2="20.1" x3="8.3" y3="21.3" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="1.9" y1="65.8" x2="23.7" y2="26.6" x3="21" y3="46.2" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="67.6" y1="65.8" x2="23.7" y2="26.6" x3="60.5" y3="46.2" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="67.6" y1="109.8" x2="67.6" y2="65.8" x3="64.5" y3="87.8" textsize="1.27" layer="20" dtype="vertical"/>
+<dimension x1="2.15" y1="108.8" x2="1.9" y2="65.8" x3="5" y3="87.3" textsize="1.27" layer="20" dtype="vertical"/>
 </package>
 </packages>
 </library>
@@ -648,13 +677,23 @@ design rules under a new name.</description>
 <element name="RIGHT" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" value="RETROESP32_CONDUCTIVE_BUTTONCONDUCTIVE_BUTTON_DIRECTIONAL_THICK" x="19.7" y="36.9" smashed="yes" rot="R180"/>
 <element name="DOWN" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" value="RETROESP32_CONDUCTIVE_BUTTONCONDUCTIVE_BUTTON_DIRECTIONAL_THICK" x="12.2" y="29.4" smashed="yes" rot="R90"/>
 <element name="LEFT" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" value="RETROESP32_CONDUCTIVE_BUTTONCONDUCTIVE_BUTTON_DIRECTIONAL_THICK" x="4.7" y="36.9" smashed="yes"/>
-<element name="U$5" library="GabozeLite" package="RETROESP32_MGB-001" value="" x="0" y="0" smashed="yes"/>
 <element name="B" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_THICK" value="RETROESP32_CONDUCTIVE_BUTTONCONDUCTIVE_BUTTON_THICK" x="48.42" y="34.21" smashed="yes" rot="R180"/>
 <element name="A" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_THICK" value="RETROESP32_CONDUCTIVE_BUTTONCONDUCTIVE_BUTTON_THICK" x="62.47" y="38.7" smashed="yes" rot="R180"/>
 <element name="SELECT" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_THICK_STARTSELECT" value="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECTCONDUCTIVE_BUTTON_THICK_STARTSELECT" x="29.055" y="16.01" smashed="yes"/>
 <element name="START" library="GabozeLite" package="RETROESP32_CONDUCTIVE_BUTTON_THICK_STARTSELECT" value="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECTCONDUCTIVE_BUTTON_THICK_STARTSELECT" x="40.655" y="16.01" smashed="yes"/>
+<element name="U1" library="GabozeLite" package="RETROESP32_SOIC8" value="RETROESP32_LM4875" x="17" y="6" smashed="yes">
+<attribute name="NAME" x="14.333" y="4.095" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="20.937" y="4.095" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="U$1" library="picoboy" package="PICOBOY_GBC_BOARD_OUTLINE" value="" x="0" y="0" smashed="yes"/>
 </elements>
 <signals>
+<signal name="GND">
+<contactref element="U1" pad="6"/>
+</signal>
+<signal name="VDD">
+<contactref element="U1" pad="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
