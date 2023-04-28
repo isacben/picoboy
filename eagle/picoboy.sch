@@ -227,11 +227,36 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="GabozeLite">
-<description>Generated from &lt;b&gt;GabozeLite.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
+<library name="picoboy">
 <packages>
-<package name="RETROESP32_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
+<package name="PICOBOY_LM4875">
+<description>LM4875</description>
+<circle x="-1.5875" y="-0.635" radius="0.45" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="PICOBOY_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
+<description>Directional Button</description>
 <circle x="0" y="0" radius="4" width="0" layer="39"/>
 <smd name="P$ACTIVE" x="0.875" y="1.75" dx="2.4" dy="0.4" layer="1" rot="R75"/>
 <smd name="P$GND" x="0.875" y="-1.75" dx="2.4" dy="0.4" layer="1" rot="R285"/>
@@ -271,7 +296,8 @@ by exp-lbrs.ulp</description>
 <vertex x="1.65" y="-3.1" curve="-30"/>
 </polygon>
 </package>
-<package name="RETROESP32_CONDUCTIVE_BUTTON_THICK">
+<package name="PICOBOY_CONDUCTIVE_BUTTON_THICK">
+<description>AB Button</description>
 <circle x="0" y="0" radius="4" width="0" layer="39"/>
 <smd name="P$ACTIVE" x="0" y="-2.25" dx="3.5" dy="0.5" layer="1" rot="R270"/>
 <smd name="P$GND" x="0" y="2.25" dx="3.5" dy="0.5" layer="1" rot="R90"/>
@@ -393,7 +419,8 @@ by exp-lbrs.ulp</description>
 <vertex x="3.75" y="0" curve="-80"/>
 </polygon>
 </package>
-<package name="RETROESP32_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
+<package name="PICOBOY_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
+<description>Start Select Button</description>
 <smd name="P$ACTIVE" x="3" y="1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$ACTIVE1" x="-1" y="1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$ACTIVE2" x="-3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
@@ -406,64 +433,10 @@ by exp-lbrs.ulp</description>
 <smd name="P$GND2" x="-1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$GND3" x="3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 </package>
-<package name="RETROESP32_SOIC8">
-<circle x="-1.5875" y="-0.635" radius="0.45" width="0.127" layer="21"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
-<symbol name="RETROESP32_CONDUCTIVE_BUTTON">
-<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
-<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
-<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
-<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
-<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
-</symbol>
-<symbol name="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT">
-<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
-<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
-<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
-<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
-<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
-</symbol>
-<symbol name="RETROESP32_LM4875">
+<symbol name="PICOBOY_LM4875">
+<description>LM4875</description>
 <wire x1="-5.08" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
 <wire x1="20.32" y1="10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -479,55 +452,47 @@ by exp-lbrs.ulp</description>
 <text x="-5.08" y="10.922" size="1.27" layer="95">&gt;Name</text>
 <text x="-5.08" y="-12.7" size="1.27" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="PICOBOY_CONDUCTIVE_BUTTON">
+<description>Play Button</description>
+<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
+<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT">
+<description>Start Select Button</description>
+<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
+<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="RETROESP32_CONDUCTIVE_BUTTON">
+<deviceset name="PICOBOY_LM4875" prefix="U">
+<description>LM4875</description>
 <gates>
-<gate name="G$1" symbol="RETROESP32_CONDUCTIVE_BUTTON" x="0" y="0"/>
+<gate name="U$1" symbol="PICOBOY_LM4875" x="-7.62" y="0"/>
 </gates>
 <devices>
-<device name="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" package="RETROESP32_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
-<connects>
-<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
-<connect gate="G$1" pin="P$GND" pad="P$GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CONDUCTIVE_BUTTON_THICK" package="RETROESP32_CONDUCTIVE_BUTTON_THICK">
-<connects>
-<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
-<connect gate="G$1" pin="P$GND" pad="P$GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT">
-<gates>
-<gate name="G$1" symbol="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CONDUCTIVE_BUTTON_THICK_STARTSELECT" package="RETROESP32_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
-<connects>
-<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE P$ACTIVE1 P$ACTIVE2 P$ACTIVE3 P$ACTIVE4 P$ACTIVE5 P$ACTIVE6"/>
-<connect gate="G$1" pin="P$GND" pad="P$GND P$GND1 P$GND2 P$GND3" route="any"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RETROESP32_LM4875" prefix="U">
-<gates>
-<gate name="U$1" symbol="RETROESP32_LM4875" x="-7.62" y="0"/>
-</gates>
-<devices>
-<device name="" package="RETROESP32_SOIC8">
+<device name="" package="PICOBOY_LM4875">
 <connects>
 <connect gate="U$1" pin="BYP" pad="7"/>
 <connect gate="U$1" pin="DC_VOL" pad="4"/>
@@ -537,6 +502,49 @@ by exp-lbrs.ulp</description>
 <connect gate="U$1" pin="VIN" pad="2"/>
 <connect gate="U$1" pin="VOUT1" pad="5"/>
 <connect gate="U$1" pin="VOUT2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_CONDUCTIVE_BUTTON">
+<description>Play Button</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CONDUCTIVE_BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" package="PICOBOY_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CONDUCTIVE_BUTTON_THICK" package="PICOBOY_CONDUCTIVE_BUTTON_THICK">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT">
+<description>Start Select Button</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CONDUCTIVE_BUTTON_THICK_STARTSELECT" package="PICOBOY_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE P$ACTIVE1 P$ACTIVE2 P$ACTIVE3 P$ACTIVE4 P$ACTIVE5 P$ACTIVE6"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND P$GND1 P$GND2 P$GND3" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -557,16 +565,16 @@ by exp-lbrs.ulp</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="UP" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
-<part name="RIGHT" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
-<part name="DOWN" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
-<part name="LEFT" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
+<part name="UP" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
+<part name="RIGHT" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
+<part name="DOWN" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
+<part name="LEFT" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="B" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_THICK"/>
-<part name="A" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_THICK"/>
-<part name="SELECT" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
-<part name="START" library="GabozeLite" deviceset="RETROESP32_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
-<part name="U1" library="GabozeLite" deviceset="RETROESP32_LM4875" device=""/>
+<part name="B" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_THICK"/>
+<part name="A" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON" device="CONDUCTIVE_BUTTON_THICK"/>
+<part name="SELECT" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
+<part name="START" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
+<part name="LM4875" library="picoboy" deviceset="PICOBOY_LM4875" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -619,9 +627,9 @@ by exp-lbrs.ulp</description>
 <instance part="START" gate="G$1" x="76.2" y="147.32" smashed="yes">
 <attribute name="NAME" x="76.2" y="151.13" size="1.9304" layer="95" font="vector" ratio="20" align="center"/>
 </instance>
-<instance part="U1" gate="U$1" x="182.88" y="162.56" smashed="yes">
-<attribute name="NAME" x="177.8" y="173.482" size="1.27" layer="95"/>
-<attribute name="VALUE" x="177.8" y="149.86" size="1.27" layer="96"/>
+<instance part="LM4875" gate="U$1" x="142.24" y="170.18" smashed="yes">
+<attribute name="NAME" x="137.16" y="181.102" size="1.27" layer="95"/>
+<attribute name="VALUE" x="137.16" y="157.48" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>

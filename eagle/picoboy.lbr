@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -173,6 +173,7 @@
 <library>
 <packages>
 <package name="PICOBOY_GBC_BOARD_OUTLINE">
+<description>PCB Outline</description>
 <circle x="29.06" y="34.58" radius="1.65" width="0.6096" layer="26"/>
 <circle x="2.01" y="22.48" radius="1.65" width="0.6096" layer="26"/>
 <circle x="67.06" y="28.13" radius="1.65" width="0.6096" layer="26"/>
@@ -232,27 +233,330 @@
 <text x="26.67" y="2.81" size="3.81" layer="26" rot="MR0">PICOBOY</text>
 <wire x1="0" y1="0" x2="0" y2="44.9" width="0" layer="20"/>
 <wire x1="51" y1="-4" x2="0" y2="0" width="0" layer="20" curve="-20"/>
-<dimension x1="56.6" y1="30.1" x2="48.1" y2="20.1" x3="52.35" y3="17" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="56.6" y1="30.1" x2="48.1" y2="20.1" x3="11.9" y3="25.1" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="56.6" y1="30.1" x2="50.6" y2="41.6" x3="53.6" y3="44.9" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="56.6" y1="30.1" x2="50.6" y2="41.6" x3="48.5" y3="35.85" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="29.1" y1="34.6" x2="56.6" y2="33" x3="42.85" y3="50.65" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="29.1" y1="34.6" x2="33.7" y2="30.1" x3="35" y3="32.35" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="21.7" y1="20.6" x2="48.1" y2="15.5" x3="34.9" y3="13.8" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="21.7" y1="20.6" x2="18.5" y2="30.1" x3="17.4" y3="25.35" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="23.7" y1="26.6" x2="23.7" y2="30.1" x3="25.7" y3="28.35" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="23.7" y1="26.6" x2="21.7" y2="20.6" x3="22.7" y3="21.3" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="2.05" y1="22.5" x2="21.7" y2="14.9" x3="11.875" y3="14.9" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="2.05" y1="22.5" x2="9.9" y2="20.1" x3="8.3" y3="21.3" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="1.9" y1="65.8" x2="23.7" y2="26.6" x3="21" y3="46.2" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="67.6" y1="65.8" x2="23.7" y2="26.6" x3="60.5" y3="46.2" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="67.6" y1="109.8" x2="67.6" y2="65.8" x3="64.5" y3="87.8" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="2.15" y1="108.8" x2="1.9" y2="65.8" x3="5" y3="87.3" textsize="1.27" layer="20" dtype="vertical"/>
+</package>
+<package name="PICOBOY_LM4875">
+<description>LM4875</description>
+<circle x="-1.5875" y="-0.635" radius="0.45" width="0.127" layer="21"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="PICOBOY_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
+<description>Directional Button</description>
+<circle x="0" y="0" radius="4" width="0" layer="39"/>
+<smd name="P$ACTIVE" x="0.875" y="1.75" dx="2.4" dy="0.4" layer="1" rot="R75"/>
+<smd name="P$GND" x="0.875" y="-1.75" dx="2.4" dy="0.4" layer="1" rot="R285"/>
+<polygon width="0.0762" layer="41">
+<vertex x="1.5" y="-3.7" curve="-110"/>
+<vertex x="-4" y="0" curve="-110"/>
+<vertex x="1.5" y="3.7" curve="65"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="1.65" y="3.1" curve="100"/>
+<vertex x="-3.4" y="0.85" curve="25"/>
+<vertex x="0.85" y="0.35" curve="-30"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="0.85" y="-0.35" curve="25"/>
+<vertex x="-3.4" y="-0.85" curve="100"/>
+<vertex x="1.65" y="-3.1" curve="-30"/>
+</polygon>
+<polygon width="0.3048" layer="29">
+<vertex x="1.65" y="3.1" curve="100"/>
+<vertex x="-3.4" y="0.85" curve="25"/>
+<vertex x="0.85" y="0.35" curve="-30"/>
+</polygon>
+<polygon width="0.3048" layer="29">
+<vertex x="0.85" y="-0.35" curve="25"/>
+<vertex x="-3.4" y="-0.85" curve="100"/>
+<vertex x="1.65" y="-3.1" curve="-30"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="1.65" y="3.1" curve="100"/>
+<vertex x="-3.4" y="0.85" curve="25"/>
+<vertex x="0.85" y="0.35" curve="-30"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0.85" y="-0.35" curve="25"/>
+<vertex x="-3.4" y="-0.85" curve="100"/>
+<vertex x="1.65" y="-3.1" curve="-30"/>
+</polygon>
+</package>
+<package name="PICOBOY_CONDUCTIVE_BUTTON_THICK">
+<description>AB Button</description>
+<circle x="0" y="0" radius="4" width="0" layer="39"/>
+<smd name="P$ACTIVE" x="0" y="-2.25" dx="3.5" dy="0.5" layer="1" rot="R270"/>
+<smd name="P$GND" x="0" y="2.25" dx="3.5" dy="0.5" layer="1" rot="R90"/>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="3"/>
+<vertex x="0" y="2.5" curve="-155"/>
+<vertex x="1" y="-2.29" curve="135"/>
+<vertex x="1" y="-2.83" curve="160"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="2"/>
+<vertex x="0" y="1.5" curve="140"/>
+<vertex x="-1" y="-1.115" curve="-125"/>
+<vertex x="-1" y="-1.73" curve="-150"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="1"/>
+<vertex x="0" y="0.5" curve="-120"/>
+<vertex x="0.43" y="-0.25" curve="135"/>
+<vertex x="0.97" y="-0.25" curve="105"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="-3"/>
+<vertex x="0" y="-2.5" curve="-155"/>
+<vertex x="-1" y="2.29" curve="135"/>
+<vertex x="-1" y="2.83" curve="160"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="-2"/>
+<vertex x="0" y="-1.5" curve="140"/>
+<vertex x="1" y="1.115" curve="-125"/>
+<vertex x="1" y="1.73" curve="-150"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="0" y="-1"/>
+<vertex x="0" y="-0.5" curve="-120"/>
+<vertex x="-0.43" y="0.25" curve="135"/>
+<vertex x="-0.97" y="0.25" curve="105"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="3"/>
+<vertex x="0" y="2.5" curve="-155"/>
+<vertex x="1" y="-2.29" curve="135"/>
+<vertex x="1" y="-2.83" curve="160"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="2"/>
+<vertex x="0" y="1.5" curve="140"/>
+<vertex x="-1" y="-1.115" curve="-125"/>
+<vertex x="-1" y="-1.73" curve="-150"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="1"/>
+<vertex x="0" y="0.5" curve="-120"/>
+<vertex x="0.43" y="-0.25" curve="135"/>
+<vertex x="0.97" y="-0.25" curve="105"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="-3"/>
+<vertex x="0" y="-2.5" curve="-155"/>
+<vertex x="-1" y="2.29" curve="135"/>
+<vertex x="-1" y="2.83" curve="160"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="-2"/>
+<vertex x="0" y="-1.5" curve="140"/>
+<vertex x="1" y="1.115" curve="-125"/>
+<vertex x="1" y="1.73" curve="-150"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="0" y="-1"/>
+<vertex x="0" y="-0.5" curve="-120"/>
+<vertex x="-0.43" y="0.25" curve="135"/>
+<vertex x="-0.97" y="0.25" curve="105"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="3"/>
+<vertex x="0" y="2.5" curve="-155"/>
+<vertex x="1" y="-2.29" curve="135"/>
+<vertex x="1" y="-2.83" curve="160"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="2"/>
+<vertex x="0" y="1.5" curve="140"/>
+<vertex x="-1" y="-1.115" curve="-125"/>
+<vertex x="-1" y="-1.73" curve="-150"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="1"/>
+<vertex x="0" y="0.5" curve="-120"/>
+<vertex x="0.43" y="-0.25" curve="135"/>
+<vertex x="0.97" y="-0.25" curve="105"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="-3"/>
+<vertex x="0" y="-2.5" curve="-155"/>
+<vertex x="-1" y="2.29" curve="135"/>
+<vertex x="-1" y="2.83" curve="160"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="-2"/>
+<vertex x="0" y="-1.5" curve="140"/>
+<vertex x="1" y="1.115" curve="-125"/>
+<vertex x="1" y="1.73" curve="-150"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="0" y="-1"/>
+<vertex x="0" y="-0.5" curve="-120"/>
+<vertex x="-0.43" y="0.25" curve="135"/>
+<vertex x="-0.97" y="0.25" curve="105"/>
+</polygon>
+<polygon width="0" layer="41">
+<vertex x="0.5" y="-3.75"/>
+<vertex x="0.5" y="-2"/>
+<vertex x="-0.5" y="-2"/>
+<vertex x="-0.5" y="-3.75" curve="-80"/>
+<vertex x="-3.75" y="0" curve="-90"/>
+<vertex x="0" y="3.75" curve="-90"/>
+<vertex x="3.75" y="0" curve="-80"/>
+</polygon>
+</package>
+<package name="PICOBOY_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
+<description>Start Select Button</description>
+<smd name="P$ACTIVE" x="3" y="1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
+<smd name="P$ACTIVE1" x="-1" y="1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
+<smd name="P$ACTIVE2" x="-3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
+<smd name="P$ACTIVE3" x="1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
+<smd name="P$ACTIVE4" x="-2" y="0" dx="2.54" dy="0.185" layer="1" roundness="100" rot="R45"/>
+<smd name="P$ACTIVE5" x="0" y="0" dx="2.54" dy="0.185" layer="1" roundness="100" rot="R135"/>
+<smd name="P$ACTIVE6" x="2" y="0" dx="2.54" dy="0.185" layer="1" roundness="100" rot="R225"/>
+<smd name="P$GND" x="1" y="1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
+<smd name="P$GND1" x="-3" y="1" dx="1.6" dy="1.6" layer="1" roundness="25" rot="R180"/>
+<smd name="P$GND2" x="-1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
+<smd name="P$GND3" x="3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 </package>
 </packages>
 <symbols>
+<symbol name="PICOBOY_LM4875">
+<description>LM4875</description>
+<wire x1="-5.08" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="BYP" x="-10.16" y="-5.08" length="middle"/>
+<pin name="DC_VOL" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="GND" x="7.62" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="HPHONE" x="25.4" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="VDD" x="7.62" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="VIN" x="-10.16" y="5.08" length="middle" direction="in"/>
+<pin name="VOUT1" x="25.4" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="VOUT2" x="25.4" y="0" length="middle" direction="out" rot="R180"/>
+<text x="-5.08" y="10.922" size="1.27" layer="95">&gt;Name</text>
+<text x="-5.08" y="-12.7" size="1.27" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="PICOBOY_CONDUCTIVE_BUTTON">
+<description>Play Button</description>
+<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
+<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT">
+<description>Start Select Button</description>
+<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="1.778" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
+<pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
+<text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="PICOBOY_LM4875" prefix="U">
+<description>LM4875</description>
+<gates>
+<gate name="U$1" symbol="PICOBOY_LM4875" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="PICOBOY_LM4875">
+<connects>
+<connect gate="U$1" pin="BYP" pad="7"/>
+<connect gate="U$1" pin="DC_VOL" pad="4"/>
+<connect gate="U$1" pin="GND" pad="6"/>
+<connect gate="U$1" pin="HPHONE" pad="3"/>
+<connect gate="U$1" pin="VDD" pad="1"/>
+<connect gate="U$1" pin="VIN" pad="2"/>
+<connect gate="U$1" pin="VOUT1" pad="5"/>
+<connect gate="U$1" pin="VOUT2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_CONDUCTIVE_BUTTON">
+<description>Play Button</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CONDUCTIVE_BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CONDUCTIVE_BUTTON_DIRECTIONAL_THICK" package="PICOBOY_CONDUCTIVE_BUTTON_DIRECTIONAL_THICK">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CONDUCTIVE_BUTTON_THICK" package="PICOBOY_CONDUCTIVE_BUTTON_THICK">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT">
+<description>Start Select Button</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CONDUCTIVE_BUTTON_THICK_STARTSELECT" package="PICOBOY_CONDUCTIVE_BUTTON_THICK_STARTSELECT">
+<connects>
+<connect gate="G$1" pin="P$ACTIVE" pad="P$ACTIVE P$ACTIVE1 P$ACTIVE2 P$ACTIVE3 P$ACTIVE4 P$ACTIVE5 P$ACTIVE6"/>
+<connect gate="G$1" pin="P$GND" pad="P$GND P$GND1 P$GND2 P$GND3" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
