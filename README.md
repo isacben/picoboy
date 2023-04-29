@@ -21,3 +21,14 @@ Alpha version of a handheld console for PICO-8 games that runs on a Raspberry Pi
 | C10 | Capacitor | [TD100M6.3](https://www.digikey.com/en/products/detail/nte-electronics-inc/TD100M6-3/11650229) | 100uF | $2.84 |
 | J1 | Audio Jack | [SJ1-3525NG-GR](https://www.digikey.com/en/products/detail/cui-devices/SJ1-3525NG-GR/2295990) | - | $0.85 |
 | J2 | Speaker | [Handheld Legend](https://handheldlegend.com/products/game-boy-color-pocket-clear-speaker-funnyplaying?_pos=1&_sid=534442f70&_ss=r) | 8 Ohms | $3.99 |
+
+## SMD components
+
+| Symbol | Description | Reference part | Value | Price (USD) |
+| --- | --- | --- | --- | --- |
+| R18 | Resistor | [ERJ-PA3J151V](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-PA3J151V/5035990) | 150 Ohms | $0.11|
+| R19 | Resistor | [ERJ-PA3J104V](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-PA3J104V/5035972) | 100 kOhms | $0.11 |
+| C7 | Capacitor | [CL10A226MP8NUNE](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A226MP8NUNE/3886932) | 0.22uF | $0.18 |
+| C8 | Capacitor | [CL10A105KP8NNC](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A105KP8NNNC/3886840) | 1uF | $0.10 |
+| C9 | Capacitor | [CL10A105KP8NNC](https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10A105KP8NNNC/3886840) | 1uF | $0.10 |
+| C10 | Capacitor | [T520A107M006ATE070](https://www.digikey.com/en/products/detail/kemet/T520A107M006ATE070/4246283) | 100uF | $0.94 |
