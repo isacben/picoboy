@@ -59,9 +59,9 @@
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
@@ -433,6 +433,46 @@
 <smd name="P$GND2" x="-1" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 <smd name="P$GND3" x="3" y="-1" dx="1.6" dy="1.6" layer="1" roundness="25"/>
 </package>
+<package name="PICOBOY_CAPACITOR_0603-MINI">
+<description>0603-Mini
+&lt;p&gt;Mini footprint for dense boards&lt;/p&gt;</description>
+<wire x1="-1.346" y1="0.583" x2="1.346" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="1.346" y1="0.583" x2="1.346" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="1.346" y1="-0.583" x2="-1.346" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="-1.346" y1="-0.583" x2="-1.346" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="-1.45" y1="-0.7" x2="-1.45" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.7" x2="1.45" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.7" x2="1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.7" x2="-1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<text x="1.524" y="-0.0635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.524" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.524" y="-0.0635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.524" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PICOBOY_VOLUME_WHEEL">
+<circle x="0" y="6.5" radius="6.95" width="0.127" layer="21"/>
+<circle x="0" y="6.5" radius="0.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="0" x2="-5.5" y2="2.286" width="0.127" layer="21"/>
+<wire x1="5.5" y1="2.286" x2="5.5" y2="0" width="0.127" layer="21"/>
+<wire x1="5.5" y1="0" x2="-5.5" y2="0" width="0.127" layer="21"/>
+<smd name="1" x="-4" y="-2" dx="1.4" dy="4" layer="1"/>
+<smd name="2" x="-2" y="-2" dx="1.4" dy="4" layer="1"/>
+<smd name="3" x="0" y="-2" dx="1.4" dy="4" layer="1"/>
+<smd name="4" x="2" y="-2" dx="1.4" dy="4" layer="1"/>
+<smd name="5" x="4" y="-2" dx="1.4" dy="4" layer="1"/>
+<pad name="P$6" x="-5" y="9" drill="1.6" shape="square"/>
+<pad name="P$7" x="5" y="9" drill="1.6" shape="square"/>
+<text x="5" y="15" size="1.27" layer="25">&gt;Name</text>
+<text x="5" y="13" size="1.27" layer="27">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PICOBOY_LM4875">
@@ -483,6 +523,48 @@
 <pin name="P$ACTIVE" x="5.08" y="0" visible="off" length="point" swaplevel="1" rot="R180"/>
 <pin name="P$GND" x="-5.08" y="0" visible="off" length="point" swaplevel="1"/>
 <text x="0" y="3.81" size="1.9304" layer="95" font="vector" ratio="20" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="PICOBOY_CAPACITOR_CERAMIC">
+<rectangle x1="-1.27" y1="0.508" x2="1.27" y2="1.016" layer="94"/>
+<rectangle x1="-1.27" y1="1.524" x2="1.27" y2="2.032" layer="94"/>
+<rectangle x1="-1.27" y1="0.508" x2="1.27" y2="1.016" layer="94"/>
+<rectangle x1="-1.27" y1="1.524" x2="1.27" y2="2.032" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="-2.29" y="1.25" size="1.27" layer="95" font="vector" rot="R90" align="center">&gt;NAME</text>
+<text x="2.3" y="1.25" size="1.27" layer="96" font="vector" rot="R90" align="center">&gt;VALUE</text>
+<text x="-2.29" y="1.25" size="1.27" layer="95" font="vector" rot="R90" align="center">&gt;NAME</text>
+<text x="2.3" y="1.25" size="1.27" layer="96" font="vector" rot="R90" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="PICOBOY_VOLUME_WHEEL">
+<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="4.064" x2="1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="2.794" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.54" x2="4.064" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="4.064" x2="2.794" y2="4.064" width="0.254" layer="94"/>
+<wire x1="2.794" y1="4.064" x2="4.064" y2="4.826" width="0.254" layer="94"/>
+<wire x1="4.064" y1="4.826" x2="4.064" y2="1.778" width="0.254" layer="94"/>
+<wire x1="4.572" y1="4.064" x2="4.572" y2="2.54" width="0.254" layer="94" curve="-101.4212"/>
+<wire x1="5.08" y1="4.572" x2="5.08" y2="2.032" width="0.254" layer="94" curve="-101.4212"/>
+<wire x1="5.588" y1="5.08" x2="5.588" y2="1.524" width="0.254" layer="94" curve="-101.4212"/>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -552,6 +634,88 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="PICOBOY_CAPACITOR_CERAMIC" prefix="C" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;Ceramic Capacitors&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;For new designs, use the packages preceded by an '_' character since they are more reliable:&lt;/p&gt;
+&lt;p&gt;The following footprints should be used on most boards:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;_0402&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0603&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0805&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_1206&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For extremely tight-pitch boards where space is at a premium, the following 'micro-pitch' footprints can be used (smaller pads, no silkscreen outline, etc.):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;_0402MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0603MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0805MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_1206MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CAPACITOR_CERAMIC" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PICOBOY_CAPACITOR_0603-MINI">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_VOLUME_WHEEL" prefix="R" uservalue="yes">
+<gates>
+<gate name="R$1" symbol="PICOBOY_VOLUME_WHEEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PICOBOY_VOLUME_WHEEL">
+<connects>
+<connect gate="R$1" pin="A" pad="1"/>
+<connect gate="R$1" pin="E" pad="5"/>
+<connect gate="R$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -575,6 +739,14 @@
 <part name="SELECT" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
 <part name="START" library="picoboy" deviceset="PICOBOY_CONDUCTIVE_BUTTON_STARTSELECT" device="CONDUCTIVE_BUTTON_THICK_STARTSELECT"/>
 <part name="LM4875" library="picoboy" deviceset="PICOBOY_LM4875" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C8" library="picoboy" deviceset="PICOBOY_CAPACITOR_CERAMIC" device="" value="1uF"/>
+<part name="C9" library="picoboy" deviceset="PICOBOY_CAPACITOR_CERAMIC" device="" value="1uF"/>
+<part name="C7" library="picoboy" deviceset="PICOBOY_CAPACITOR_CERAMIC" device="" value="0.22uF"/>
+<part name="R1" library="picoboy" deviceset="PICOBOY_VOLUME_WHEEL" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -595,6 +767,7 @@
 </sheet>
 <sheet>
 <plain>
+<wire x1="101.6" y1="212.09" x2="101.6" y2="0" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="UP" gate="G$1" x="55.88" y="83.82" smashed="yes">
@@ -627,14 +800,112 @@
 <instance part="START" gate="G$1" x="76.2" y="147.32" smashed="yes">
 <attribute name="NAME" x="76.2" y="151.13" size="1.9304" layer="95" font="vector" ratio="20" align="center"/>
 </instance>
-<instance part="LM4875" gate="U$1" x="142.24" y="170.18" smashed="yes">
-<attribute name="NAME" x="137.16" y="181.102" size="1.27" layer="95"/>
-<attribute name="VALUE" x="137.16" y="157.48" size="1.27" layer="96"/>
+<instance part="LM4875" gate="U$1" x="187.96" y="165.1" smashed="yes">
+<attribute name="NAME" x="182.88" y="176.022" size="1.27" layer="95"/>
+<attribute name="VALUE" x="182.88" y="152.4" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="GND1" gate="1" x="195.58" y="147.32" smashed="yes">
+<attribute name="VALUE" x="193.04" y="144.78" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="210.82" y="185.42" smashed="yes" rot="R90">
+<attribute name="VALUE" x="213.36" y="182.88" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND3" gate="1" x="177.8" y="147.32" smashed="yes">
+<attribute name="VALUE" x="175.26" y="144.78" size="1.778" layer="96"/>
+</instance>
+<instance part="C8" gate="G$1" x="177.8" y="152.4" smashed="yes">
+<attribute name="NAME" x="175.51" y="153.65" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="180.1" y="153.65" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="180.1" y="153.65" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
+</instance>
+<instance part="C9" gate="G$1" x="205.74" y="185.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.49" y="183.13" size="1.27" layer="95" font="vector" rot="R180" align="center"/>
+<attribute name="VALUE" x="204.49" y="187.72" size="1.27" layer="96" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="204.49" y="183.13" size="1.27" layer="95" font="vector" rot="R180" align="center"/>
+<attribute name="VALUE" x="204.49" y="187.72" size="1.27" layer="96" font="vector" rot="R180" align="center"/>
+</instance>
+<instance part="C7" gate="G$1" x="177.8" y="175.26" smashed="yes">
+<attribute name="NAME" x="175.51" y="176.51" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="180.1" y="176.51" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="175.51" y="176.51" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="180.1" y="176.51" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
+</instance>
+<instance part="R1" gate="R$1" x="162.56" y="165.1" smashed="yes">
+<attribute name="NAME" x="156.591" y="161.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="158.75" y="161.29" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND4" gate="1" x="162.56" y="147.32" smashed="yes">
+<attribute name="VALUE" x="160.02" y="144.78" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="LM4875" gate="U$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R1" gate="R$1" pin="A"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="162.56" y1="160.02" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LM4875" gate="U$1" pin="BYP"/>
+<wire x1="177.8" y1="157.48" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LM4875" gate="U$1" pin="VDD"/>
+<wire x1="195.58" y1="180.34" x2="195.58" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="185.42" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="187.96" x2="195.58" y2="185.42" width="0.1524" layer="91"/>
+<junction x="195.58" y="185.42"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LM4875" gate="U$1" pin="VIN"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="172.72" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R1" gate="R$1" pin="S"/>
+<pinref part="LM4875" gate="U$1" pin="DC_VOL"/>
+<wire x1="167.64" y1="165.1" x2="177.8" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="R1" gate="R$1" pin="E"/>
+<label x="162.56" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="162.56" y1="187.96" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
+<label x="195.58" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="AUDIO" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="180.34" x2="177.8" y2="187.96" width="0.1524" layer="91"/>
+<label x="177.8" y="187.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

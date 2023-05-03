@@ -529,6 +529,30 @@ KEMET S / EIA 3216-12</description>
 <text x="5" y="15" size="1.27" layer="25">&gt;Name</text>
 <text x="5" y="13" size="1.27" layer="27">&gt;Value</text>
 </package>
+<package name="PICOBOY_CAPACITOR_0603-MINI">
+<description>0603-Mini
+&lt;p&gt;Mini footprint for dense boards&lt;/p&gt;</description>
+<wire x1="-1.346" y1="0.583" x2="1.346" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="1.346" y1="0.583" x2="1.346" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="1.346" y1="-0.583" x2="-1.346" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="-1.346" y1="-0.583" x2="-1.346" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="-1.45" y1="-0.7" x2="-1.45" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.7" x2="1.45" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.7" x2="1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.7" x2="-1.45" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<smd name="1" x="-0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.9" dy="0.9" layer="1"/>
+<text x="1.524" y="-0.0635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.524" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.524" y="-0.0635" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.524" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PICOBOY_LM4875">
@@ -646,6 +670,20 @@ KEMET S / EIA 3216-12</description>
 <pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+</symbol>
+<symbol name="PICOBOY_CAPACITOR_CERAMIC">
+<rectangle x1="-1.27" y1="0.508" x2="1.27" y2="1.016" layer="94"/>
+<rectangle x1="-1.27" y1="1.524" x2="1.27" y2="2.032" layer="94"/>
+<rectangle x1="-1.27" y1="0.508" x2="1.27" y2="1.016" layer="94"/>
+<rectangle x1="-1.27" y1="1.524" x2="1.27" y2="2.032" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="-2.29" y="1.25" size="1.27" layer="95" font="vector" rot="R90" align="center">&gt;NAME</text>
+<text x="2.3" y="1.25" size="1.27" layer="96" font="vector" rot="R90" align="center">&gt;VALUE</text>
+<text x="-2.29" y="1.25" size="1.27" layer="95" font="vector" rot="R90" align="center">&gt;NAME</text>
+<text x="2.3" y="1.25" size="1.27" layer="96" font="vector" rot="R90" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -787,6 +825,38 @@ KEMET S / EIA 3216-12</description>
 <connect gate="R$1" pin="A" pad="1"/>
 <connect gate="R$1" pin="E" pad="5"/>
 <connect gate="R$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICOBOY_CAPACITOR_CERAMIC" prefix="C" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;Ceramic Capacitors&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;For new designs, use the packages preceded by an '_' character since they are more reliable:&lt;/p&gt;
+&lt;p&gt;The following footprints should be used on most boards:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;_0402&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0603&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0805&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_1206&lt;/b&gt; - Standard footprint for regular board layouts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For extremely tight-pitch boards where space is at a premium, the following 'micro-pitch' footprints can be used (smaller pads, no silkscreen outline, etc.):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;_0402MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0603MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_0805MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;_1206MP&lt;/b&gt; - Micro-pitch footprint for very dense/compact boards&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="PICOBOY_CAPACITOR_CERAMIC" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PICOBOY_CAPACITOR_0603-MINI">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
